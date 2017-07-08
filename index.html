@@ -28,22 +28,18 @@
         background-color: rgba(249, 249, 249, 0.89);
         background-blend-mode: multiply;
         height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      @media screen and (max-width: 500px) {
-        .wrapper {
-          align-items: initial;
-          padding-top: 50px;
-        }
       }
       .title {
-        flex: none;
-        text-align: left;
         font-size: 1.625rem;
         width: 80%;
         max-width: 1000px;
+        margin: 0 auto;
+        padding-top: 100px;
+      }
+      @media screen and (max-width: 500px) {
+        .title {
+          padding-top: 30px;
+        }
       }
       .title__logo {
         width: 350px;
