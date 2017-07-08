@@ -35,6 +35,7 @@
       .title {
         flex: none;
         text-align: left;
+        font-size: 1.625rem;
       }
       .title__logo {
         width: 350px;
@@ -49,16 +50,40 @@
         font-weight: 700;
       }
       .title__subtitle {
-        font-size: 1.625rem;
         letter-spacing: .05em;
       }
       .contact {
-        margin-top: 45px;
+        margin-top: 100px;
       }
       .contact__link {
         background: #2e2e2e;
         padding: 0px 3px;
         color: #fff;
+      }
+      .signup {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        overflow: visible;
+      }
+      .signup__button {
+        background: #2e2e2e;
+        color: #fff;
+        padding: 14px 25px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+        cursor: pointer;
+        text-align: center;
+        padding: 12px 30px;
+        letter-spacing: .2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 4px;
+        display: inline-block;
+        transition: all .2s ease;
+      }
+      .signup__button:hover {
+        background: #4a4211;
+        transform: translateY(-10px);
       }
     </style>
   </head>
@@ -67,9 +92,12 @@
       <div class="title">
         <img class="title__logo" src="//nodeschool.io/images/schoolhouse.svg" alt="nodeschool logo">
         <h1 class="title__name"><span>NodeSchool Lviv</span></h1>
-        <h4 class="title__subtitle">Open source workshops that teach web software skills.</h4>
+        <h4 class="title__subtitle">Open source Node.js workshops that teach web software skills.</h4>
+        <div class="signup">
+          <a class="signup__button" href="https://goo.gl/forms/Mbw2Ug2WAb3tzfpF3" target="_blank">Sign up</a>
+        </div>
         <div class="contact">
-        Contact: <a class="contact__link" href="https://fb.com/roman.rodomansky" target="_blank">fb.com/roman.rodomansky</a>.
+          In case of any questions, contact to <a class="contact__link" href="https://fb.com/roman.rodomansky" target="_blank">fb.com/roman.rodomansky</a>.
         </div>
       </div>
     </div>
