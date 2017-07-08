@@ -50,12 +50,18 @@
           width: 100%;
         }
       }
-      .title__name {} .title__name span {
+      .title__name {}
+      .title__name span {
         display: inline-block;
         background: #fbdd33;
         padding: 5px 20px;
         font-size: 4rem;
         font-weight: 700;
+      }
+      @media screen and (max-width: 500px) {
+        .title__name {
+          margin-bottom: 30px;
+        }
       }
       @media screen and (max-width: 500px) {
         .title__name span {
