@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700" rel="stylesheet">
     <style type="text/css">
       * {
-        margin: 0; padding: 0;
+        margin: 0;
+        padding: 0;
         overflow: auto;
         font-family: 'Noticia Text', Helvetica, sans-serif;
         font-weight: 400;
@@ -22,7 +23,6 @@
         height: 100vh;
       }
       .wrapper {
-        xbackground-image: url(//nodeschool.io/images/test-bg.png);
         background-size: 25%;
         background-position: 0 -100px;
         background-color: rgba(249, 249, 249, 0.89);
@@ -36,29 +36,32 @@
         flex: none;
         text-align: left;
         font-size: 1.625rem;
+        width: 80%;
+        max-width: 1000px;
       }
       .title__logo {
         width: 350px;
         margin-bottom: 30px;
       }
-      .title__name { }
-      .title__name span {
+      @media screen and (max-width: 500px) {
+        .title__logo {
+          width: 100%;
+        }
+      }
+      .title__name {} .title__name span {
         display: inline-block;
         background: #fbdd33;
         padding: 5px 20px;
         font-size: 4rem;
         font-weight: 700;
       }
+      @media screen and (max-width: 500px) {
+        .title__name span {
+          font-size: 2rem;
+        }
+      }
       .title__subtitle {
         letter-spacing: .05em;
-      }
-      .contact {
-        margin-top: 100px;
-      }
-      .contact__link {
-        background: #2e2e2e;
-        padding: 0px 3px;
-        color: #fff;
       }
       .signup {
         position: relative;
@@ -70,7 +73,7 @@
         background: #2e2e2e;
         color: #fff;
         padding: 14px 25px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
         cursor: pointer;
         text-align: center;
         padding: 12px 30px;
@@ -84,6 +87,20 @@
       .signup__button:hover {
         background: #4a4211;
         transform: translateY(-10px);
+      }
+      .contact {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+      .contact__link {
+        background: #2e2e2e;
+        padding: 0px 3px;
+        color: #fff;
+      }
+      @media screen and (max-width: 500px) {
+        .contact__link {
+          font-size: 1.3rem;
+        }
       }
     </style>
   </head>
